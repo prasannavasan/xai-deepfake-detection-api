@@ -1,0 +1,8 @@
+opencv-python
+mtcnn
+efficientnet
+alibi
+tensorflow
+numpy
+seaborn
+flask-swagger-ui

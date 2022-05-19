@@ -1,0 +1,73 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "description": "An all-inclusive API that detects if a video is a deepfake and provides a forensic analysis on it",
+      "version": "1.0.0",
+      "title": "Xaivier Forensic Deepfake Detector API"
+    },
+    "tags": [
+      {
+        "name": "Prediction",
+        "description": "API for requesting predictions and their explanations for a given video"
+      }
+    ],
+    "paths": {
+      "/predict": {
+        "post": {
+          "tags": [
+            "Prediction"
+          ],
+          "summary": "Generate predictions and their explanations",
+          "requestBody": {
+            "description": "Predicts if the given video is a deepfake and returns the frames, faces, prediction scores and the explanations for the predictions",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/predictPostBody"
+                }
+              }
+            }
+          },
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "$ref": "#/components/schemas/id"
+              }
+            },
+            "400": {
+              "description": "Failed. Bad post data."
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "id": {
+          "properties": {
+            "uuid": {
+              "type": "string"
+            }
+          }
+        },
+        "predictPostBody": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "string"
+            },
+            "videoName": {
+                "type": "string",
+                "format": "string"
+              }
+          }
+        }
+      }
+    }
+  }
