@@ -6,3 +6,4 @@ tensorflow
 numpy
 seaborn
 flask-swagger-ui
+gunicorn
