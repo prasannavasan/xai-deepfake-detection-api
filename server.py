@@ -33,13 +33,7 @@ app.register_blueprint(swaggerur_blueprint, url_prefix=SWAGGER_URL)
 
 cred = credentials.Certificate('key.json')
 firebase_admin.initialize_app(cred, {
-    "apiKey": "AIzaSyCXWXZAtVsp3pTJynEJEyvRCuXnkf2gQgo",
-    "authDomain": "xai-deepfake-detection.firebaseapp.com",
-    "projectId": "xai-deepfake-detection",
-    "storageBucket": "xai-deepfake-detection.appspot.com",
-    "messagingSenderId": "47311348404",
-    "appId": "1:47311348404:web:426a651fa247ef9511ade1",
-    "serviceAccount": "key.json",
+    "serviceAccount": "x-key.json",
 })
 
 db = firestore.client()
@@ -172,7 +166,9 @@ def predict():
         print(prediciton_arr)
 
         metadata = getMetadata(data['url'])
+        print("Got the metadata")
         # sendMail()
+        print("Saving in firestore... ")
         doc_ref.set({
             u'fake': prediciton_arr[0],
             u'real': prediciton_arr[1],
@@ -181,7 +177,7 @@ def predict():
             u'metadata': metadata,
             u'frame_preds': prediciton_arr[4]
         })
-
+        print( {"metadata": metadata, "fake": prediciton_arr[0], "real": prediciton_arr[1], "Predicted Label": prediciton_arr[2], "Predicted Label Text": prediciton_arr[3], "Frame preds": prediciton_arr[4]})
         return {"metadata": metadata, "fake": prediciton_arr[0], "real": prediciton_arr[1], "Predicted Label": prediciton_arr[2], "Predicted Label Text": prediciton_arr[3], "Frame preds": prediciton_arr[4]}
     except:
         err = "Something went wrong on the server. Try again"

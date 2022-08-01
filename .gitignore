@@ -2,3 +2,5 @@ model_checkpoints/
 test_videos/
 ffprobe.exe
 venv/
+x-key.json
+__pycache__
