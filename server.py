@@ -1,5 +1,4 @@
 from flask import make_response, jsonify
-from httplib2 import Response
 from werkzeug.exceptions import HTTPException, BadRequest, InternalServerError
 import ast
 import smtplib
@@ -31,7 +30,7 @@ swaggerur_blueprint = get_swaggerui_blueprint(SWAGGER_URL, API_URL, config={
                                               'app_name': "Xaivier Forensic Deepfake Detector API"})
 app.register_blueprint(swaggerur_blueprint, url_prefix=SWAGGER_URL)
 
-cred = credentials.Certificate('key.json')
+cred = credentials.Certificate('x-key.json')
 firebase_admin.initialize_app(cred, {
     "serviceAccount": "x-key.json",
 })
@@ -75,6 +74,9 @@ def getMetadata(video_url):
 # def custom_error(message, status_code):
 #     return make_response(jsonify(message), status_code)
 
+@ app.route("/", methods=['GET'])
+def home():
+    return "Welcome to XAIVIER!"
 
 @ app.route("/prediction", methods=['GET'])
 def prediction():
