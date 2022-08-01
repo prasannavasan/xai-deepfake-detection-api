@@ -4,5 +4,4 @@ ffprobe.exe
 venv/
 x-key.json
 __pycache__
-key.json
 /svenv

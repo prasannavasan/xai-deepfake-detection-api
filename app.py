@@ -30,9 +30,9 @@ swaggerur_blueprint = get_swaggerui_blueprint(SWAGGER_URL, API_URL, config={
                                               'app_name': "Xaivier Forensic Deepfake Detector API"})
 app.register_blueprint(swaggerur_blueprint, url_prefix=SWAGGER_URL)
 
-cred = credentials.Certificate('x-key.json')
+cred = credentials.Certificate('key.json')
 firebase_admin.initialize_app(cred, {
-    "serviceAccount": "x-key.json",
+    "serviceAccount": "key.json",
 })
 
 db = firestore.client()

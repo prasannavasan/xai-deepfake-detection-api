@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "xai-deepfake-detection",
+    "private_key_id": "4257a3e4d9f9efeac9842b9c92a64c1ae0c8b0e5",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKG76LVNozJ/fv\nFEK7d/KDUN/1yhuGxY451u2BVIhDTXvRb3CotG7XDEJcTNhzWH2ghRvm0yo/z1vm\nE9rhpw1rPG2q4GkAPC8wcMl2jNhY1r5HzDz981xSHWx8n9Qz4gvJl2ctEIIi/EgO\nFpPNmnaBxmbJotvYzsETRHrVQpcl5uQo2Vx4nXI7tFs3h2sICXYQTRMviFSSovSd\n1tQfvTmbiqloPR8x0wfHkuLHtUl8vie62v3+UE624dmCjZywc6+FzmSnsWRiSXaI\n/5WlJCPODvadb+G0a7bT3rOHdF/6LvuJN66V7uNwgE3yLNG1RBsUQxqoduBCVB0Z\nWrURHSoVAgMBAAECggEABNbME2w8rTYGoa0Uy/O2sHmirENQQx+HyWGYlQptqxNu\ntu9MIhldkpiOQsU0QGEKl9eYC22lL5sT9xG3M+kRvuVEpBPiSyTcnGIEp7MjCKs3\nBWNYxMmG4hBwAIdOkM9zBDrqpX9J+c7AiugYn5J46sTR5cjhmGB2WCDl5twgKTAd\ncblLFxwFzvQqOUjfkk45yKCJBmf7pKHel6wX25H05s5y7CfkRNcPr2FeJtlHMZug\nfZwyhE63qz3SQz/99sf2t5R4RtOBq71q44/pCC2jw2VAsvq3qjZ64pA1kk6fGKti\njMNn8Nb/20+U+yy1HdjOzYKKUmkiLenPa9P/TsRyIQKBgQDmLIF1UeObfZ48nv4A\nsjyJTHuLqrkNJqKyN+bWX+0oApcutKB8WNKbEjuEBOG27MHdfoCbC8EXL6vholvC\nRzmIEuCD6P7ndwjGCTdwhMBtuJGfeOvU5W1FojkvVcYPN7jlfO5CjLS/jnFHT+tH\nim6U/ec8UBjJB0w3OOh9zYGbIwKBgQDgyRaa04axtk5sNBe5zgyVgW+O9pFqSAxp\nfP4NR6Ch+Vwrl+47toYed0RhtX6uzixs5pDPYXvsQSQaYZki9HkGJfaqIsO/O5OD\nB/7FpeuNRK7UBz6hih9bxKBGEUzCDWIrd0V8H8Y9PJR6h+CJYK9Jw7o9v0kEvaSU\nmHoYPBi1ZwKBgQDOjD2Xw+ZVkAJBMAOLKGZ+Zq2vBYKNtI/nEZcJ5IbyknCMLvac\n3zAOi+vwalkKR6coVe6eM4wQfGznS0TAMB4GZ7olZR3pI74xx++B/v6W9ztmOaKX\nJ1JJXGuoeHYFDeHTvaoo+g7wnqg0cBkX17en57hrPQ0gyHWyUFUBHzsgtQKBgHea\np5t0B4xRe4LZaPJlb46xU2GXUqJhebE7X5ZDUXY9z0wmyA0fvldBkLIIt0Jd04eS\nWuTtctmvg31CBxBxUl/yHUBDxTHgiknDHE2gTihZrkiFHk8nxi22/qypkdUC+AQ2\nr1MvOPTmYf6cg921Ay/VpCgsurZ6DbM/Ol/gwijrAoGAXo83PiOtlzRwjMyOc5jW\nDFopgkZ+g4m8IJ1KyQJUIcjfBJwz7rxsfBzvbbBLMyCWDU6zFqgMZfjNI5GW72DD\nvciStrAHrOk5JEO5MdenF4Ha6eaISfIISxZzIMvHeBKRXEVGyoeOpb+ehOuSwQ8q\nNX/+Wvy42DirgQ8SNYhwiZ8=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-xhxki@xai-deepfake-detection.iam.gserviceaccount.com",
+    "client_id": "110599635422430366227",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xhxki%40xai-deepfake-detection.iam.gserviceaccount.com"
+  }
+  
